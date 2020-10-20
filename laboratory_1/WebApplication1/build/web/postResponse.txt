@@ -1,0 +1,20 @@
+Number of valid words for [letters = iajeqw] is 4
+a
+i
+we
+wee
+e
+my
+we
+wedded
+mummy
+deem
+deed
+due
+eye
+mud
+mum
+deemed
+wee
+wed
+d

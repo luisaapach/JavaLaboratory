@@ -1,0 +1,68 @@
+[POST] Stress test for 6 letters and 100 threads
+Maximum time of response : 15.212321281433105
+Minimum time of response : 14.454349517822266
+Medium time of response : 14.64363220691681
+Total time of response : 1464.363220691681
+
+[GET] Stress test for 6 letters and 100 threads
+Maximum time of response : 14.43440318107605
+Minimum time of response : 0.3510618209838867
+Medium time of response : 7.552254388332367
+Total time of response : 755.2254388332367
+
+[POST] Stress test for 6 letters and 200 threads
+Maximum time of response : 32.0083384513855
+Minimum time of response : 3.5605289936065674
+Medium time of response : 30.897822326932634
+Total time of response : 5407.118907213211
+
+[GET] Stress test for 6 letters and 200 threads
+Maximum time of response : 31.66015648841858
+Minimum time of response : 0.42420005798339844
+Medium time of response : 17.145710596302212
+Total time of response : 2554.7108788490295
+
+[POST] Stress test for 4 letters and 500 threads
+Maximum time of response : 0.17253923416137695
+Minimum time of response : 0.008974075317382812
+Medium time of response : 0.042408766746521
+Total time of response : 21.204383373260498
+
+[GET] Stress test for 4 letters and 500 threads
+Maximum time of response : 0.1186830997467041
+Minimum time of response : 0.00399017333984375
+Medium time of response : 0.015044349193572998
+Total time of response : 7.522174596786499
+
+[POST] Stress test for 6 letters and 500 threads
+Maximum time of response : 33.68346285820007
+Minimum time of response : 17.496189832687378
+Medium time of response : 33.09745000074576
+Total time of response : 3673.816950082779
+
+[GET] Stress test for 6 letters and 500 threads
+Maximum time of response : 32.333709955215454
+Minimum time of response : 0.1158900260925293
+Medium time of response : 17.93143644477382
+Total time of response : 2366.949610710144
+
+
+Timpii de raspuns 
+	> Creste vizibil odata cu numarul de caractere - mai multe combinari de litere de verificat daca exista in dictionar
+	> Cu numarul de litere, creste si probabilitatea sa fie gasite mai multe cuvinte valide => si timp mai mult pentru scriere
+
+Probleme legate de concurenta
+	> GET - e implementat ca ThreadSafe
+		> face modificari direct in Response, care e de la sine ThreadSafe, particular fiecarui Request
+	> POST - e implementat non-ThreadSafe
+		> Problema : scrierea tuturor raspunsurilor intr-un acelasi fisier
+		> Solutie : renuntare la scrierea in fisier, fisier cu numar particular pentru Request (dar overkill la memorie)
+
+Resource Contention
+	> POST - Problema : scrierea tuturor raspunsurilor intr-un acelasi fisier
+				> Toate raspunsurile incerc a fi scrise in acelasi fisier
+				=>> Ex. conflict : 10 Thread-uri intra la server in acelasi timp. Serverul incepe sa rezolve Request-urile
+							Primul Thread care are acces la fisier, va scrie raspunsul in el
+							Celelalte thread-uri, pentru ca nu au reusit sa preia Handle-ul de fisier, 
+							vor returna acelasi lucru = > vor gasi informatiile scrise de Thread1
+		> Solutie : renuntare la scrierea in fisier, fisier cu numar particular pentru Request (dar overkill la memorie)
