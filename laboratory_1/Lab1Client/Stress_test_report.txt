@@ -46,8 +46,9 @@ Probleme legate de concurenta & Resource Contention
 	> POST - Scrierea in acelasi fisier a tuturor response-urilor de tip POST
 	       => e implementat non-ThreadSafe - desi evit mare parte din problema deschizand fisierul `post_response.txt` cu append
 	
-		> Problema : Desi fisierul `post_response.txt` este deschis cu append (deci se va scrie mereu la sfarsitul fisierului)
-				si posibilitatea de suprascriere scade semnificativ fata de atunci cand e deschis, simplu, cu write,
+		> Problema : Desi fisierul `post_response.txt` este deschis cu append (deci se va scrie mereu la sfarsitul fisierului),
+				iar raspunsurile sunt relativ de dimensiune mica
+				=> posibilitatea de suprascriere scade semnificativ fata de atunci cand e deschis, simplu, cu write,
 				tot vor exista cazuri in care 2 sau mai multe thread-uri se pot intersecta in scrierea in fisier
 			   : La un moment dat, fisierul de response poate ajunge la dimensiuni fff mari
 		> Solutii : 
