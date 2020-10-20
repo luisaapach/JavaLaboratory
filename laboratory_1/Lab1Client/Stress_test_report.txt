@@ -1,8 +1,8 @@
 [POST] Stress test for 6 letters and 100 threads
-Maximum time of response : 15.212321281433105
-Minimum time of response : 14.454349517822266
-Medium time of response : 14.64363220691681
-Total time of response : 1464.363220691681
+Maximum time of response : 13.735272407531738
+Minimum time of response : 7.123951435089111
+Medium time of response : 12.756866550445556
+Total time of response : 1275.6866550445557
 
 [GET] Stress test for 6 letters and 100 threads
 Maximum time of response : 14.43440318107605
@@ -10,23 +10,11 @@ Minimum time of response : 0.3510618209838867
 Medium time of response : 7.552254388332367
 Total time of response : 755.2254388332367
 
-[POST] Stress test for 6 letters and 200 threads
-Maximum time of response : 32.0083384513855
-Minimum time of response : 3.5605289936065674
-Medium time of response : 30.897822326932634
-Total time of response : 5407.118907213211
-
-[GET] Stress test for 6 letters and 200 threads
-Maximum time of response : 31.66015648841858
-Minimum time of response : 0.42420005798339844
-Medium time of response : 17.145710596302212
-Total time of response : 2554.7108788490295
-
 [POST] Stress test for 4 letters and 500 threads
-Maximum time of response : 0.17253923416137695
-Minimum time of response : 0.008974075317382812
-Medium time of response : 0.042408766746521
-Total time of response : 21.204383373260498
+Maximum time of response : 0.11169981956481934
+Minimum time of response : 0.007984161376953125
+Medium time of response : 0.030172815799713135
+Total time of response : 15.086407899856567
 
 [GET] Stress test for 4 letters and 500 threads
 Maximum time of response : 0.1186830997467041
@@ -35,10 +23,10 @@ Medium time of response : 0.015044349193572998
 Total time of response : 7.522174596786499
 
 [POST] Stress test for 6 letters and 500 threads
-Maximum time of response : 33.68346285820007
-Minimum time of response : 17.496189832687378
-Medium time of response : 33.09745000074576
-Total time of response : 3673.816950082779
+Maximum time of response : 33.917582750320435
+Minimum time of response : 5.592313528060913
+Medium time of response : 32.689417428681345
+Total time of response : 5393.753875732422
 
 [GET] Stress test for 6 letters and 500 threads
 Maximum time of response : 32.333709955215454
@@ -50,19 +38,23 @@ Total time of response : 2366.949610710144
 Timpii de raspuns 
 	> Creste vizibil odata cu numarul de caractere - mai multe combinari de litere de verificat daca exista in dictionar
 	> Cu numarul de litere, creste si probabilitatea sa fie gasite mai multe cuvinte valide => si timp mai mult pentru scriere
+	> Apelul de Init() poate incetini, daca este apelat inaintea unui rand de request-uri
 
-Probleme legate de concurenta
+Probleme legate de concurenta & Resource Contention
 	> GET - e implementat ca ThreadSafe
-		> face modificari direct in Response, care e de la sine ThreadSafe, particular fiecarui Request
-	> POST - e implementat non-ThreadSafe
-		> Problema : scrierea tuturor raspunsurilor intr-un acelasi fisier
-		> Solutie : renuntare la scrierea in fisier, fisier cu numar particular pentru Request (dar overkill la memorie)
+		> face modificari direct in Response, care e de la sine ThreadSafe ( = particular fiecarui Request)
+	> POST - Scrierea in acelasi fisier a tuturor response-urilor de tip POST
+	       => e implementat non-ThreadSafe - desi evit mare parte din problema deschizand fisierul `post_response.txt` cu append
+	
+		> Problema : Desi fisierul `post_response.txt` este deschis cu append (deci se va scrie mereu la sfarsitul fisierului)
+				si posibilitatea de suprascriere scade semnificativ fata de atunci cand e deschis, simplu, cu write,
+				tot vor exista cazuri in care 2 sau mai multe thread-uri se pot intersecta in scrierea in fisier
+			   : La un moment dat, fisierul de response poate ajunge la dimensiuni fff mari
+		> Solutii : 
+			- renuntare la scrierea in fisier, scriu direct in Response [care e Thread Safe]
+			- imi fac un ResponseQueue, in care se scrie blocant = > E Thread safe
+				El va retine deci poate raspunsurile din Get-uri
+				Va scrie in fisier dupa un interval de timp[ex.20s] sau dupa un nr de requesturi [ex. 100],
+					avand grija ca citirea sa fie din nou blocanta, sa nu pierdem proprietatea de ThreadSafe
 
-Resource Contention
-	> POST - Problema : scrierea tuturor raspunsurilor intr-un acelasi fisier
-				> Toate raspunsurile incerc a fi scrise in acelasi fisier
-				=>> Ex. conflict : 10 Thread-uri intra la server in acelasi timp. Serverul incepe sa rezolve Request-urile
-							Primul Thread care are acces la fisier, va scrie raspunsul in el
-							Celelalte thread-uri, pentru ca nu au reusit sa preia Handle-ul de fisier, 
-							vor returna acelasi lucru = > vor gasi informatiile scrise de Thread1
-		> Solutie : renuntare la scrierea in fisier, fisier cu numar particular pentru Request (dar overkill la memorie)
+

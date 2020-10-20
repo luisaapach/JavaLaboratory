@@ -3,18 +3,1352 @@ a
 i
 we
 wee
-e
-my
-we
-wedded
-mummy
-deem
-deed
-due
+Number of valid words for [letters = alm] is 3
+all
+a
+am
+Number of valid words for [letters = alm] is 3
+all
+a
+am
+Number of valid words for [letters = alm] is 3
+all
+a
+am
+Number of valid words for [letters = cal] is 2
+all
+a
+Number of valid words for [letters = icboco] is 2
+i
+bob
+Number of valid words for [letters = kaaknt] is 4
+a
+an
+at
+tank
+Number of valid words for [letters = toyetj] is 8
 eye
-mud
-mum
-deemed
+to
+jet
+joy
+toe
+too
+toy
+yet
+Number of valid words for [letters = wsfvrf] is 0
+Number of valid words for [letters = otngwt] is 18
+gown
+go
+no
+on
+to
+got
+onto
+not
+now
+noon
+own
+ton
+too
+two
+wont
+won
+wow
+town
+Number of valid words for [letters = fbvlfm] is 0
+Number of valid words for [letters = amcmiz] is 6
+a
+i
+am
+mimic
+aim
+cam
+Number of valid words for [letters = eewjme] is 4
 wee
-wed
-d
+em
+me
+we
+Number of valid words for [letters = veunvg] is 6
+egg
+gun
+nun
+even
+gene
+venue
+Number of valid words for [letters = psgcon] is 14
+cs
+go
+no
+on
+so
+pops
+songs
+con
+noon
+pop
+son
+soon
+sons
+song
+Number of valid words for [letters = asppry] is 16
+a
+as
+prays
+pray
+par
+pay
+spray
+ray
+say
+spy
+says
+pass
+pays
+arrays
+array
+ass
+Number of valid words for [letters = fjdlyp] is 1
+fly
+Number of valid words for [letters = gkcblc] is 0
+Number of valid words for [letters = daxdzj] is 4
+a
+ax
+jazz
+add
+Number of valid words for [letters = tibplj] is 12
+i
+it
+pi
+bill
+till
+pill
+bit
+ill
+lip
+lit
+pit
+tip
+Number of valid words for [letters = rzafik] is 7
+a
+i
+if
+air
+far
+fair
+affair
+Number of valid words for [letters = mqbmua] is 3
+a
+am
+mum
+Number of valid words for [letters = tthwmz] is 0
+Number of valid words for [letters = eldqsp] is 18
+sells
+sleeps
+deeds
+less
+deep
+deed
+speed
+spell
+sleep
+else
+led
+see
+speeds
+seed
+sees
+sell
+spells
+sped
+Number of valid words for [letters = jpjcpi] is 2
+i
+pi
+Number of valid words for [letters = konjoc] is 6
+con
+knock
+no
+on
+noon
+cook
+Number of valid words for [letters = avqwwo] is 2
+a
+wow
+Number of valid words for [letters = cxqlzb] is 0
+Number of valid words for [letters = aymeqx] is 9
+a
+am
+ax
+em
+me
+my
+eye
+may
+exam
+Number of valid words for [letters = ltedpk] is 10
+keep
+kept
+delete
+tell
+kettle
+deep
+deed
+led
+let
+pet
+Number of valid words for [letters = ozotcr] is 5
+root
+or
+to
+rot
+too
+Number of valid words for [letters = hwjdnp] is 0
+Number of valid words for [letters = bqisbi] is 2
+i
+is
+Number of valid words for [letters = lgnwdn] is 0
+Number of valid words for [letters = zwozog] is 2
+wow
+go
+Number of valid words for [letters = zxhmrc] is 1
+mr
+Number of valid words for [letters = bmxcak] is 5
+a
+back
+am
+ax
+cam
+Number of valid words for [letters = psbylu] is 19
+by
+up
+us
+bulb
+bull
+busy
+buss
+buys
+supply
+plus
+pull
+pulp
+pulls
+bus
+buy
+pub
+spy
+ups
+bulbs
+Number of valid words for [letters = xprikf] is 5
+i
+if
+pi
+fix
+rip
+Number of valid words for [letters = onwftl] is 28
+flow
+fool
+foot
+font
+no
+of
+on
+to
+onto
+flown
+toll
+tool
+town
+follow
+lot
+low
+not
+now
+off
+noon
+own
+ton
+too
+two
+wolf
+wont
+won
+wow
+Number of valid words for [letters = oajehw] is 13
+a
+eh
+ha
+he
+ho
+oh
+we
+hah
+how
+owe
+wee
+who
+wow
+Number of valid words for [letters = nqjswp] is 0
+Number of valid words for [letters = fdwvhp] is 0
+Number of valid words for [letters = zoasez] is 9
+a
+as
+so
+sea
+see
+sees
+assess
+ease
+ass
+Number of valid words for [letters = qnhigp] is 9
+i
+in
+pi
+high
+gig
+gin
+hip
+pig
+pin
+Number of valid words for [letters = yoozub] is 5
+by
+you
+bob
+boy
+buy
+Number of valid words for [letters = yyudpr] is 2
+dry
+up
+Number of valid words for [letters = dolpjs] is 17
+loops
+do
+so
+polls
+poll
+pool
+pops
+loop
+loss
+spool
+odd
+old
+pop
+sod
+sold
+solo
+odds
+Number of valid words for [letters = jfcbxb] is 0
+Number of valid words for [letters = hmcram] is 16
+a
+am
+ha
+mr
+hah
+ham
+char
+ram
+harm
+arch
+charm
+march
+arc
+arm
+cam
+car
+Number of valid words for [letters = pftexq] is 4
+text
+fee
+pet
+feet
+Number of valid words for [letters = iqutsn] is 27
+i
+stun
+suit
+in
+is
+it
+us
+units
+tins
+insist
+unit
+stunt
+stuns
+quit
+quits
+suits
+its
+nun
+nut
+sin
+sit
+sun
+tin
+nuns
+nuts
+sins
+sits
+Number of valid words for [letters = wxjezh] is 4
+eh
+he
+we
+wee
+Number of valid words for [letters = vjfeah] is 7
+a
+eh
+ha
+he
+have
+fee
+hah
+Number of valid words for [letters = engwue] is 7
+egg
+we
+gun
+new
+nun
+wee
+gene
+Number of valid words for [letters = zhydcu] is 1
+huh
+Number of valid words for [letters = evgdtu] is 8
+deed
+edge
+due
+dug
+egg
+get
+gut
+vet
+Number of valid words for [letters = txecdg] is 7
+text
+detect
+deed
+edge
+egg
+get
+exceed
+Number of valid words for [letters = konltc] is 21
+no
+on
+to
+onto
+toll
+took
+tool
+cook
+cool
+lock
+look
+cotton
+colon
+con
+knock
+lot
+not
+noon
+ton
+too
+clock
+Number of valid words for [letters = goqsmf] is 6
+go
+of
+so
+fog
+mom
+off
+Number of valid words for [letters = ghthhe] is 7
+the
+egg
+eh
+he
+thee
+get
+teeth
+Number of valid words for [letters = fkdbqx] is 0
+Number of valid words for [letters = wrexjc] is 6
+re
+we
+crew
+err
+were
+wee
+Number of valid words for [letters = kosyhy] is 8
+shook
+ho
+oh
+so
+hooks
+shy
+sky
+hook
+Number of valid words for [letters = kkbpng] is 0
+Number of valid words for [letters = ftqzzy] is 0
+Number of valid words for [letters = zfwccs] is 1
+cs
+Number of valid words for [letters = dtookq] is 6
+dot
+do
+to
+odd
+too
+took
+Number of valid words for [letters = oogets] is 21
+egg
+ego
+go
+so
+to
+get
+got
+see
+set
+toe
+too
+test
+tests
+sees
+sets
+gets
+toes
+toss
+eggs
+egos
+goes
+Number of valid words for [letters = shynap] is 22
+a
+an
+as
+ha
+pass
+pays
+hash
+happy
+any
+ash
+ass
+hah
+has
+hay
+nay
+pan
+pay
+say
+shy
+spy
+says
+span
+Number of valid words for [letters = ehwpnj] is 7
+eh
+he
+we
+new
+when
+pen
+wee
+Number of valid words for [letters = qacfcq] is 1
+a
+Number of valid words for [letters = pvlfyd] is 1
+fly
+Number of valid words for [letters = puhdwi] is 9
+i
+id
+pi
+up
+did
+dip
+hid
+hip
+huh
+Number of valid words for [letters = rarkyl] is 7
+a
+lark
+lay
+ray
+ally
+array
+all
+Number of valid words for [letters = aghrff] is 5
+a
+far
+ha
+hah
+rag
+Number of valid words for [letters = zenrcj] is 2
+re
+err
+Number of valid words for [letters = emmuxp] is 5
+em
+me
+up
+mum
+pump
+Number of valid words for [letters = jolsxg] is 7
+go
+so
+logo
+logs
+loss
+log
+solo
+Number of valid words for [letters = nxivug] is 7
+i
+in
+giving
+gig
+gin
+gun
+nun
+Number of valid words for [letters = prxdwp] is 0
+Number of valid words for [letters = oovqrz] is 1
+or
+Number of valid words for [letters = vbohij] is 5
+i
+ho
+oh
+bob
+job
+Number of valid words for [letters = krkkjy] is 0
+Number of valid words for [letters = ypkmmq] is 1
+my
+Number of valid words for [letters = fxjoyf] is 3
+of
+joy
+off
+Number of valid words for [letters = jayetb] is 19
+a
+baby
+at
+be
+by
+beat
+beta
+byte
+ate
+bat
+bay
+bet
+bye
+eat
+eye
+jet
+tab
+tea
+yet
+Number of valid words for [letters = hwrlat] is 18
+a
+at
+ha
+tall
+wrath
+that
+hall
+halt
+all
+art
+wall
+hah
+hat
+law
+what
+rat
+raw
+war
+Number of valid words for [letters = rxrsxt] is 0
+Number of valid words for [letters = kmyvvi] is 2
+i
+my
+Number of valid words for [letters = uxteab] is 16
+a
+at
+ax
+be
+beat
+beta
+text
+tube
+ate
+bat
+bet
+but
+eat
+tab
+tax
+tea
+Number of valid words for [letters = puvskw] is 3
+up
+us
+ups
+Number of valid words for [letters = ultsgz] is 4
+us
+guts
+lust
+gut
+Number of valid words for [letters = uhmfpy] is 7
+my
+up
+pump
+mummy
+huh
+hum
+mum
+Number of valid words for [letters = lbgzjc] is 0
+Number of valid words for [letters = gfuony] is 15
+go
+no
+of
+on
+funny
+young
+fog
+fun
+gun
+guy
+nun
+off
+noon
+noun
+you
+Number of valid words for [letters = wyqwiv] is 1
+i
+Number of valid words for [letters = ptflzb] is 0
+Number of valid words for [letters = bblscp] is 1
+cs
+Number of valid words for [letters = izhvag] is 7
+a
+i
+ha
+high
+gig
+hah
+via
+Number of valid words for [letters = nilxdf] is 11
+i
+id
+if
+in
+did
+fix
+ill
+lid
+nil
+find
+fill
+Number of valid words for [letters = gkmuvv] is 3
+gum
+mug
+mum
+Number of valid words for [letters = opgohb] is 7
+go
+ho
+oh
+hog
+pop
+bob
+bog
+Number of valid words for [letters = rgznqk] is 0
+Number of valid words for [letters = fhkcyk] is 0
+Number of valid words for [letters = tszhtx] is 0
+Number of valid words for [letters = mjkien] is 11
+i
+em
+in
+me
+keen
+knee
+mine
+ink
+nine
+ken
+men
+Number of valid words for [letters = sjwhuj] is 2
+us
+huh
+Number of valid words for [letters = wqgnhs] is 0
+Number of valid words for [letters = qvktue] is 2
+queue
+vet
+Number of valid words for [letters = ogrzaa] is 7
+a
+go
+or
+oar
+rag
+razor
+ago
+Number of valid words for [letters = lkgizm] is 6
+i
+kill
+milk
+mill
+gig
+ill
+Number of valid words for [letters = zgicjp] is 4
+i
+pi
+gig
+pig
+Number of valid words for [letters = xsmwfo] is 5
+of
+so
+mom
+off
+wow
+Number of valid words for [letters = qniuba] is 8
+a
+i
+an
+in
+ban
+bin
+nun
+banana
+Number of valid words for [letters = pbeayp] is 8
+a
+baby
+eye
+be
+by
+pay
+bay
+bye
+Number of valid words for [letters = vjjlcy] is 0
+Number of valid words for [letters = asbyse] is 25
+a
+baby
+bass
+base
+eye
+as
+be
+by
+say
+eyes
+sea
+see
+says
+essay
+sees
+yes
+bases
+assess
+ease
+easy
+essays
+ass
+basses
+bay
+bye
+Number of valid words for [letters = gbidjr] is 11
+i
+id
+bird
+grid
+bid
+big
+did
+dig
+gig
+rid
+rigid
+Number of valid words for [letters = gcvjyn] is 0
+Number of valid words for [letters = sapfwl] is 19
+a
+as
+swap
+appall
+swaps
+pass
+laws
+walls
+falls
+all
+ass
+wall
+law
+alas
+saw
+was
+fall
+flaws
+flaw
+Number of valid words for [letters = emscul] is 34
+muscle
+seems
+sues
+museum
+sums
+cs
+em
+me
+us
+smells
+sells
+cell
+less
+clue
+cells
+cums
+uses
+mess
+messes
+cue
+cum
+else
+smell
+mum
+sec
+see
+sue
+sum
+use
+scum
+seem
+sees
+sell
+clues
+Number of valid words for [letters = rokdwc] is 14
+do
+or
+crowd
+cook
+door
+rock
+cow
+odd
+rod
+row
+wood
+work
+word
+wow
+Number of valid words for [letters = gzclbi] is 5
+i
+bill
+big
+gig
+ill
+Number of valid words for [letters = zmwdgk] is 0
+Number of valid words for [letters = uexefw] is 4
+fee
+few
+we
+wee
+Number of valid words for [letters = avntwn] is 6
+a
+an
+at
+want
+van
+vat
+Number of valid words for [letters = btkhyh] is 2
+by
+thy
+Number of valid words for [letters = bhguja] is 7
+a
+ha
+bag
+bug
+hah
+huh
+ugh
+Number of valid words for [letters = cpspkm] is 1
+cs
+Number of valid words for [letters = qqfsfb] is 0
+Number of valid words for [letters = kjxefe] is 1
+fee
+Number of valid words for [letters = bsownh] is 24
+ho
+no
+oh
+on
+so
+bobs
+boss
+owns
+bob
+bow
+shows
+shown
+how
+now
+noon
+own
+son
+who
+won
+wow
+show
+snow
+soon
+sons
+Number of valid words for [letters = blutxl] is 3
+bulb
+bull
+but
+Number of valid words for [letters = lzkxej] is 0
+Number of valid words for [letters = hitcjw] is 7
+i
+it
+witch
+hit
+with
+wit
+which
+Number of valid words for [letters = xdnptd] is 0
+Number of valid words for [letters = mjhpbb] is 0
+Number of valid words for [letters = avncuq] is 5
+a
+an
+can
+nun
+van
+Number of valid words for [letters = mqwsee] is 10
+seems
+em
+me
+we
+mess
+messes
+see
+wee
+seem
+sees
+Number of valid words for [letters = aoakyt] is 6
+a
+at
+to
+too
+toy
+took
+Number of valid words for [letters = jwvitb] is 4
+i
+it
+bit
+wit
+Number of valid words for [letters = waslfo] is 33
+a
+flow
+as
+fool
+of
+so
+flows
+allows
+laws
+walls
+loss
+falls
+slows
+all
+ass
+fools
+follow
+wall
+law
+low
+allow
+off
+alas
+saw
+also
+wolf
+was
+wow
+fall
+slow
+solo
+flaws
+flaw
+Number of valid words for [letters = twywdo] is 9
+dot
+do
+to
+odd
+too
+toy
+two
+wood
+wow
+Number of valid words for [letters = pambxo] is 12
+a
+am
+ax
+bomb
+boom
+amp
+bob
+box
+map
+mob
+mom
+pop
+Number of valid words for [letters = jetxwa] is 12
+a
+at
+ax
+we
+text
+ate
+eat
+jet
+tax
+tea
+wee
+wet
+Number of valid words for [letters = bkqkvp] is 0
+Number of valid words for [letters = ufeequ] is 2
+fee
+queue
+Number of valid words for [letters = sprwnx] is 0
+Number of valid words for [letters = vnrkdk] is 0
+Number of valid words for [letters = ddtllj] is 0
+Number of valid words for [letters = chnqbx] is 0
+Number of valid words for [letters = skdtcu] is 8
+cs
+us
+cuts
+stuck
+duck
+dust
+cut
+ducks
+Number of valid words for [letters = orhhta] is 20
+a
+root
+horror
+at
+ha
+ho
+oh
+or
+to
+hah
+hat
+hot
+oar
+rat
+rot
+too
+tooth
+that
+throat
+art
+Number of valid words for [letters = xktagl] is 9
+a
+at
+ax
+talk
+tall
+all
+lag
+tag
+tax
+Number of valid words for [letters = bwlnpz] is 0
+Number of valid words for [letters = yhocaj] is 8
+a
+ha
+ho
+oh
+coach
+hah
+hay
+joy
+Number of valid words for [letters = srnteb] is 43
+better
+trees
+be
+re
+been
+beer
+bent
+best
+bets
+rests
+reset
+sense
+tense
+tens
+test
+tests
+terse
+tree
+beers
+senses
+steer
+enter
+resent
+resets
+rent
+rest
+enters
+bet
+err
+nets
+nest
+street
+stress
+steers
+net
+see
+set
+ten
+nests
+seen
+sees
+sent
+sets
+Number of valid words for [letters = eoqish] is 14
+i
+eh
+he
+ho
+is
+oh
+so
+shoes
+hes
+his
+see
+she
+sees
+shoe
+Number of valid words for [letters = hkelja] is 11
+a
+eh
+ha
+he
+lake
+leak
+hall
+heel
+hell
+all
+hah
+Number of valid words for [letters = bnaukx] is 7
+a
+bank
+an
+ax
+ban
+nun
+banana
+Number of valid words for [letters = tcmhmo] is 8
+ho
+oh
+to
+hot
+mom
+motto
+too
+tooth
+Number of valid words for [letters = zdvzdi] is 3
+i
+did
+id
+Number of valid words for [letters = ftizsd] is 12
+i
+id
+if
+is
+it
+stiff
+did
+fit
+its
+sit
+sits
+fits
+Number of valid words for [letters = rxckjg] is 0
+Number of valid words for [letters = ajcbys] is 10
+a
+baby
+bass
+as
+by
+cs
+ass
+bay
+say
+says
+Number of valid words for [letters = efyfxl] is 5
+eye
+fee
+fly
+feel
+fell
+Number of valid words for [letters = voombv] is 5
+mob
+mom
+bomb
+boom
+bob
+Number of valid words for [letters = iofvev] is 6
+i
+fee
+if
+of
+off
+five
+Number of valid words for [letters = cenzuu] is 2
+cue
+nun
+Number of valid words for [letters = qosooi] is 3
+i
+is
+so
+Number of valid words for [letters = qjnvzr] is 0
+Number of valid words for [letters = ftddja] is 6
+a
+fat
+at
+daft
+data
+add
+Number of valid words for [letters = gyuuxe] is 3
+egg
+eye
+guy
+Number of valid words for [letters = rgvdqy] is 1
+dry
+Number of valid words for [letters = ioitys] is 12
+i
+is
+it
+so
+to
+its
+sit
+too
+toy
+sits
+toss
+toys
+Number of valid words for [letters = nytich] is 12
+i
+in
+it
+thin
+tiny
+city
+hint
+inch
+hit
+thy
+tin
+cynic
+Number of valid words for [letters = vbkqpn] is 0
+Number of valid words for [letters = wlorpm] is 15
+mr
+or
+poll
+poor
+pool
+loop
+roll
+room
+low
+mom
+pop
+pro
+row
+worm
+wow

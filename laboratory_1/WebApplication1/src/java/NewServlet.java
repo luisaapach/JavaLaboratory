@@ -168,7 +168,7 @@ public class NewServlet extends HttpServlet {
         }
         letters = letters.toLowerCase();
         System.out.println(context.getRealPath("/") + "postResponse.txt");
-        FileWriter writer = new FileWriter(context.getRealPath("/") + "postResponse.txt", false);
+        FileWriter writer = new FileWriter(context.getRealPath("/") + "postResponse.txt", true);
         
         ArrayList<String> correctWords = this.SearchForWords(letters);
         writer.write(String.format("Number of valid words for [letters = %s] is %d\n",letters,correctWords.size()));
