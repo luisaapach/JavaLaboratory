@@ -53,9 +53,13 @@ Probleme legate de concurenta & Resource Contention
 			   : La un moment dat, fisierul de response poate ajunge la dimensiuni fff mari
 		> Solutii : 
 			- renuntare la scrierea in fisier, scriu direct in Response [care e Thread Safe]
-			- imi fac un ResponseQueue, in care se scrie blocant = > E Thread safe
-				El va retine deci poate raspunsurile din Get-uri
-				Va scrie in fisier dupa un interval de timp[ex.20s] sau dupa un nr de requesturi [ex. 100],
-					avand grija ca citirea sa fie din nou blocanta, sa nu pierdem proprietatea de ThreadSafe
+			sau
+			- scrierea raspunsurilor mereu intr-un fisier nou si stergerea lor dupa un interval de secunde
+				Problema: s-ar putea ca ultimul thread sa nu apuce sa primeasca fisierul
+			sau
+			- Folosirea de synchronized intr-o metoda care face scrierea in fisier,
+				descriptorul de fisier fiind retinut ca membru al clasei si deschis in Init()
+				[Nu ca acum, adica la fiecare post sa fie deschis un nou descriptor]
+				=> Toate thread-urile manipuleaza acelasi descriptor si asteapta la scriere daca altcineva e in synchronized
 
 
