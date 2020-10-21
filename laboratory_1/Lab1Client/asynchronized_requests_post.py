@@ -17,8 +17,8 @@ def call(i,times):
     print('Thread '+str(i)+'[Time : {}]'.format(t_i) + 'Response : ' + r.text)
 
 times = []
-f=open("Stress_test_report.txt","a+")
-f.write("[POST] Stress test for 6 letters and 500 threads\n")
+f=open("Asynchronized_Requests_Report.txt","a+")
+f.write("[POST] Asynchronized Requests for 6 letters and 500 threads\n")
 with concurrent.futures.ThreadPoolExecutor(max_workers=500) as executor:
 	for i in range(500):
 		executor.submit(call,i,times)

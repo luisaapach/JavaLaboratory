@@ -1,34 +1,34 @@
-[POST] Stress test for 6 letters and 100 threads
+[POST] Asynchronized Requests for 6 letters and 100 threads
 Maximum time of response : 13.735272407531738
 Minimum time of response : 7.123951435089111
 Medium time of response : 12.756866550445556
 Total time of response : 1275.6866550445557
 
-[GET] Stress test for 6 letters and 100 threads
+[GET] Asynchronized Requests for 6 letters and 100 threads
 Maximum time of response : 14.43440318107605
 Minimum time of response : 0.3510618209838867
 Medium time of response : 7.552254388332367
 Total time of response : 755.2254388332367
 
-[POST] Stress test for 4 letters and 500 threads
+[POST] Asynchronized Requests for 4 letters and 500 threads
 Maximum time of response : 0.11169981956481934
 Minimum time of response : 0.007984161376953125
 Medium time of response : 0.030172815799713135
 Total time of response : 15.086407899856567
 
-[GET] Stress test for 4 letters and 500 threads
+[GET] Asynchronized Requests for 4 letters and 500 threads
 Maximum time of response : 0.1186830997467041
 Minimum time of response : 0.00399017333984375
 Medium time of response : 0.015044349193572998
 Total time of response : 7.522174596786499
 
-[POST] Stress test for 6 letters and 500 threads
+[POST] Asynchronized Requests for 6 letters and 500 threads
 Maximum time of response : 33.917582750320435
 Minimum time of response : 5.592313528060913
 Medium time of response : 32.689417428681345
 Total time of response : 5393.753875732422
 
-[GET] Stress test for 6 letters and 500 threads
+[GET] Asynchronized Requests for 6 letters and 500 threads
 Maximum time of response : 32.333709955215454
 Minimum time of response : 0.1158900260925293
 Medium time of response : 17.93143644477382
@@ -61,5 +61,3 @@ Probleme legate de concurenta & Resource Contention
 				descriptorul de fisier fiind retinut ca membru al clasei si deschis in Init()
 				[Nu ca acum, adica la fiecare post sa fie deschis un nou descriptor]
 				=> Toate thread-urile manipuleaza acelasi descriptor si asteapta la scriere daca altcineva e in synchronized
-
-
