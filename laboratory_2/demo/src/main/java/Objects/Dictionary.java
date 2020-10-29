@@ -17,7 +17,16 @@ public class Dictionary {
             super(errorMessage);
         }
     }
-    public void addDictionaryPair(DictionaryPair newDictionaryPair) throws WordAlreadyExists {
+
+    public static class EmptyWord extends Exception {
+        public EmptyWord(String errorMessage) {
+            super(errorMessage);
+        }
+    }
+    public void addDictionaryPair(DictionaryPair newDictionaryPair) throws WordAlreadyExists, EmptyWord {
+        if(newDictionaryPair.getWord().length()==0){
+            throw new EmptyWord("The word must have the length > 0");
+        }
         DictionaryPair alreadyExists = dictionary.stream()
                 .filter(dictionaryPair -> newDictionaryPair.getWord().equals(dictionaryPair.getWord()) && newDictionaryPair.getLanguage().equals(dictionaryPair.getLanguage()))
                 .findAny()
