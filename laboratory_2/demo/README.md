@@ -9,6 +9,6 @@
   - Model - JavaBeans = DictionaryPair
   - Cookie - pentru retinerea ultimului Language folosit
   - Folosit extra un style.css, embaded la result.jsp, pentru afisarea tabelului corespunzator Dictionarului
-  - Exceptii particulare pentru : WordAlreadyAdded si WrongCaptchaResult
+  - Exceptii particulare pentru : WordAlreadyAdded, WrongCaptchaResult si EmptyWord
 
 
