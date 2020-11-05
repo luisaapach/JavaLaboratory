@@ -13,6 +13,7 @@ public class DictionaryPair {
     private String language;
     private String word;
     private String definition;
+    private String date;
 
 
     public DictionaryPair(){
@@ -40,5 +41,13 @@ public class DictionaryPair {
 
     public String getWord() {
         return word;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }

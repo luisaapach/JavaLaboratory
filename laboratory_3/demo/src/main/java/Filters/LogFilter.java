@@ -11,6 +11,7 @@ public class LogFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         ServletContext context = this.filterConfig.getServletContext();
+        servletResponse.setCharacterEncoding("UTF-8");
         context.log("ServerName - "+servletRequest.getServerName() + " Client IP - " + servletRequest.getRemoteAddr());
         context.log(" Parameters - ");
 //        for (Map.Entry<String,String[]> entry : servletRequest.getParameterMap().entrySet()) {

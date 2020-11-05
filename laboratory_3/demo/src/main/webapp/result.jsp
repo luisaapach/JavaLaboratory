@@ -5,8 +5,11 @@
   Time: 6:36 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@page import="Utils.DictionaryPair"%>
-<%@page import="java.util.ArrayList"%>
+<%--<%@page import="Utils.DictionaryPair"%>--%>
+<%--<%@page import="java.util.ArrayList"%>--%>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="view" %>
+<%@ taglib uri="/WEB-INF/TLD/tag_definition"
+           prefix="definition" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -15,17 +18,20 @@
 <style><%@include file="style.css"%></style>
 <body>
 <h1> Dictionary now:</h1>
-<table>
-    <tr> <th> Word </th>
-    <th> Language </th>
-    <th> Description </th>
-    </tr>
-<%
- ArrayList<DictionaryPair> list_of_words = (ArrayList<DictionaryPair>)request.getSession().getAttribute("Controller_Dictionary");
- for (DictionaryPair el : list_of_words){
-     out.println("<tr><td>"+el.getWord()+"</td><td>"+el.getLanguage()+"</td><td>"+el.getDefinition()+"</td></tr>");
- }
-%>
-</table>
+<%--<table>--%>
+<%--    <tr> <th> Word </th>--%>
+<%--    <th> Language </th>--%>
+<%--    <th> Description </th>--%>
+<%--    <th> Date </th>--%>
+<%--    </tr>--%>
+<%--<%--%>
+<%-- ArrayList<DictionaryPair> list_of_words = (ArrayList<DictionaryPair>)request.getSession().getAttribute("Controller_Dictionary");--%>
+<%-- for (DictionaryPair el : list_of_words){--%>
+<%--     out.println("<tr><td>"+el.getWord()+"</td><td>"+el.getLanguage()+"</td><td>"+el.getDefinition()+"</td><td>"+el.getDate()+"</td></tr>");--%>
+<%-- }--%>
+<%--%>--%>
+    <view:viewDictionary language="Romanian"/>
+    <definition:DefinitionTag word="apple" language="Romanian"/>
+<%--</table>--%>
 </body>
 </html>

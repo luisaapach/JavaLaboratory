@@ -6,7 +6,9 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Locale;
 
 @WebServlet(urlPatterns = {"/Controller"})
@@ -31,18 +33,22 @@ public class Controller extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // Post din input.jsp cu AddDictionaryParameters
         resp.setContentType("text/html");
+        Locale locale = req.getLocale( );
+
+        String date = DateFormat.getDateTimeInstance(
+                DateFormat.FULL,
+                DateFormat.SHORT,
+                locale).format(new Date( ));
         DictionaryPair dictionaryPair=new DictionaryPair();
         dictionaryPair.setWord(req.getParameter("word"));
         dictionaryPair.setDefinition(req.getParameter("definition"));
         dictionaryPair.setLanguage(req.getParameter("language"));
-
+        dictionaryPair.setDate(date);
         String captchaResult = req.getParameter("result_captcha");
 
         Dictionary dictionary;
-
         // Preiau / creez sesiunea
         HttpSession session = req.getSession();
-
         ArrayList<DictionaryPair> addedItems = (ArrayList<DictionaryPair>) session.getAttribute("Controller_Dictionary");
         if(addedItems!=null)
             dictionary = new Dictionary(addedItems);
