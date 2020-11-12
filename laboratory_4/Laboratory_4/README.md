@@ -11,6 +11,7 @@
 	- Manager - preia lista de persoane pt formarea checkbox list-ului si 
 		  - preia listele de persoane & meeting-urilor pentru a afisa rezultatele
 		  - adauga record-uri - preia submit-urile din formulare
+	- PostgreSQL - a fost folosit pentru crearea bazei de date si a tabelelor
 
 ## Exercitiul 2
 	- ChocoSolver - implementare pentru rezolvarea problemei Meeting Scheduling Problem
