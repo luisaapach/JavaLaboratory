@@ -1,0 +1,107 @@
+package Beans;
+
+import javax.enterprise.context.SessionScoped;
+import javax.faces.bean.ManagedBean;
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+@ManagedBean(name="meetingBean")
+@SessionScoped
+public class MeetingBean implements Serializable {
+    private BigDecimal id;
+    private String topic;
+    private Date starting_time;
+    private BigDecimal duration;
+    private List<PersonBean> selectedPersons;
+
+    public BigDecimal getId() {
+        return id;
+    }
+
+//    public void setId(String id) {
+//        this.id = new BigInteger(id);
+//    }
+
+
+    public void setId(BigDecimal id) {
+        this.id = id;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+//    public Date getStarting_time() {
+//        return starting_time;
+//    }
+//
+////    public void setStarting_time(String starting_time) {
+////        try {
+////            this.starting_time = new SimpleDateFormat("yyyy-MM-dd HH:mm")
+////                    .parse(starting_time);
+////        } catch (ParseException e) {
+////            e.printStackTrace();
+//////            Date date = new Date();
+//////            this.starting_time = new SimpleDateFormat("yyyy-MM-dd HH:mm").format(date);
+////        }
+////    }
+//
+//
+//    public void setStarting_time(Date starting_time) {
+//        this.starting_time = starting_time;
+//    }
+
+
+//    public String getStarting_time() {
+//        return starting_time;
+//    }
+//
+//    public void setStarting_time(String starting_time) {
+//        this.starting_time = starting_time;
+//    }
+
+
+    public Date getStarting_time() {
+        return starting_time;
+    }
+
+    public void setStarting_time(Date starting_time) {
+        this.starting_time = starting_time;
+    }
+
+//    public String getDuration() {
+//        return duration;
+//    }
+//
+//    public void setDuration(String duration) {
+//        this.duration = duration;
+//    }
+
+
+    public BigDecimal getDuration() {
+        return duration;
+    }
+
+    public void setDuration(BigDecimal duration) {
+        this.duration = duration;
+    }
+
+    public List<PersonBean> getSelectedPersons() {
+        return selectedPersons;
+    }
+
+    public void setSelectedPersons(List<PersonBean> selectedPersons) {
+        this.selectedPersons = selectedPersons;
+
+    }
+}
