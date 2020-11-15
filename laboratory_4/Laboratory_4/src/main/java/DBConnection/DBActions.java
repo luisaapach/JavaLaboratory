@@ -55,7 +55,7 @@ public class DBActions {
             Connection conn = DBActions.createConnection();
             assert conn != null;
             Statement st = conn.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM public.\"Persons\" where id=\""+String.valueOf(id)+"\"");
+            ResultSet rs = st.executeQuery("SELECT * FROM public.\"Persons\" where id="+String.valueOf(id));
             while (rs.next()) {
                 p.setId(rs.getBigDecimal(1));
                 p.setName((String) rs.getString(2));

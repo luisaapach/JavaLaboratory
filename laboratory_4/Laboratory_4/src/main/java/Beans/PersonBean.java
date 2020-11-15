@@ -21,11 +21,6 @@ public class PersonBean  implements Serializable {
         return id;
     }
 
-//    public void setId(String id) {
-//        this.id = new BigInteger(id);
-//    }
-
-
     public void setId(BigDecimal id) {
         this.id = id;
     }
@@ -36,5 +31,13 @@ public class PersonBean  implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "PersonBean{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

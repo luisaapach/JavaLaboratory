@@ -24,11 +24,6 @@ public class MeetingBean implements Serializable {
         return id;
     }
 
-//    public void setId(String id) {
-//        this.id = new BigInteger(id);
-//    }
-
-
     public void setId(BigDecimal id) {
         this.id = id;
     }
@@ -41,36 +36,6 @@ public class MeetingBean implements Serializable {
         this.topic = topic;
     }
 
-//    public Date getStarting_time() {
-//        return starting_time;
-//    }
-//
-////    public void setStarting_time(String starting_time) {
-////        try {
-////            this.starting_time = new SimpleDateFormat("yyyy-MM-dd HH:mm")
-////                    .parse(starting_time);
-////        } catch (ParseException e) {
-////            e.printStackTrace();
-//////            Date date = new Date();
-//////            this.starting_time = new SimpleDateFormat("yyyy-MM-dd HH:mm").format(date);
-////        }
-////    }
-//
-//
-//    public void setStarting_time(Date starting_time) {
-//        this.starting_time = starting_time;
-//    }
-
-
-//    public String getStarting_time() {
-//        return starting_time;
-//    }
-//
-//    public void setStarting_time(String starting_time) {
-//        this.starting_time = starting_time;
-//    }
-
-
     public Date getStarting_time() {
         return starting_time;
     }
@@ -78,15 +43,6 @@ public class MeetingBean implements Serializable {
     public void setStarting_time(Date starting_time) {
         this.starting_time = starting_time;
     }
-
-//    public String getDuration() {
-//        return duration;
-//    }
-//
-//    public void setDuration(String duration) {
-//        this.duration = duration;
-//    }
-
 
     public BigDecimal getDuration() {
         return duration;
