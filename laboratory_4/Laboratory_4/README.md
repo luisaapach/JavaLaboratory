@@ -14,5 +14,13 @@
 	- PostgreSQL - a fost folosit pentru crearea bazei de date si a tabelelor
 
 ## Exercitiul 2
-	- ChocoSolver - implementare pentru rezolvarea problemei Meeting Scheduling Problem
-	- DisplayTables - pentru afisarea tabelelor si rezultatelor 
+	- ChocoSolver - implementare pentru rezolvarea problemei Meeting Scheduling Problem cu distante
+	- displayResults - pentru afisarea rezultatelor generate de ChocoSolver
+	- import_file - pentru importarea unui fisier de tipul fisierului `test_chocosolver.txt`(aflat in root-ul repo-ului)
+		- format fisier : 
+			- nrMeetings nrPersons nrTimeSlots
+			- Matrice care spune daca pers x participa la meeting-ul y (m[x][y]=1)
+			- Matrice care spune distanta intre meeting-ul x si meeting-ul y (d[x][y]=z, cu d[x][x]=0) 
+
+	Extra Page - displayTables - pentru afisarea tabelelor
+	

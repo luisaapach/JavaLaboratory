@@ -10,13 +10,6 @@ import org.chocosolver.solver.*;
 import org.chocosolver.solver.variables.*;
 import org.chocosolver.solver.constraints.*;
 
-
-/*
- * This is a solution of the meeting scheduling problem
- * The meeting scheduling problem is described in cspLip:
- * http://csplib.org/ as prob046
- */
-
 public class ChocoSolver {
 
     // process input
@@ -44,18 +37,14 @@ public class ChocoSolver {
             mAgents = sc.nextInt();
             timeslots = sc.nextInt();
 
-            attendance = new int[mAgents][nMeetings]; // this is only needed to compute which meetings can be in parallel
-            distance = new int[nMeetings][nMeetings]; // this is used to apply the travel contraints
-
-            /* construct attendance matrix */
+            attendance = new int[mAgents][nMeetings]; 
+            distance = new int[nMeetings][nMeetings]; 
             for (int i = 0; i < mAgents; i++) {
                 sc.next();
                 for (int j = 0; j < nMeetings; j++) {
                     attendance[i][j] = sc.nextInt();
                 }
             }
-
-            /* construct distance matrix */
             for (int i = 0; i < nMeetings; i++) {
                 sc.next();
                 for (int j = 0; j < nMeetings; j++) {
