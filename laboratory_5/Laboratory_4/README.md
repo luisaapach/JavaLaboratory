@@ -11,7 +11,7 @@
                 - `page.xhtml` - include `header.xhtml` si `footer.xhtml`; insereaza "content" <br/>
                 - `dataView.xhtml` - implementeaza `page.xhtml`, defineste "content" si creaza un form care permite inserarea de dataViewContent =>  template-ul este implementat de test in pagina `test_view.xhtml`<br/>
                 - `dataEdit.xhtml` - implementeaza `page.xhtml`, defineste "content" si creaza un form care permite inserarea de dataEditContent =>  - template-ul este implementat de test in pagina `test_edit.xhtml`<br/>
-                                   - `dataEdit.xhtml` contine p:message este updatat cu un mesaj corespunzator cand este apelat Close folosind `p:ajax`
+                - `dataEdit.xhtml` contine `p:message`, care este updatat cu un mesaj corespunzator cand este apelat Close, implementare facuta prin `p:ajax`
    - `Converters` - folder pentru stocarea de converters<br/>
                   - `LocationConveter` = clasa care converteste numele Locatiei in upperCase
                   ```<h:inputText id="locationName" value="#{locationBean.name}" converter="locationConverter"
