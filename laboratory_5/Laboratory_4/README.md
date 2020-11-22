@@ -4,13 +4,11 @@
 
   - `Locations.java` class - adaugata pentru a putea asocia unui Meeting o locatie - cu tabela Locations aferenta<br/>
                            - `meetings.xhtml` a fost modificat astfel incat sa contina un select de o locatie - lista obtinuta din tabela Locations
-  - `templates` 
-        - folder pentru stocarea template-urilor<br/>
+  - `templates` - folder pentru stocarea template-urilor<br/>
                 - `footer.xhtml` - footer template - contine Project Version & Copyright notice<br/>
                 - `menuBar.xhtml` - meniu care permite navigarea intre pagini<br/>
                 - `header.xhtml` - inlude `menuBar.xhtml` si insereaza "pageTitle"<br/>
-                - 'page.xhtml' - include `header.xhtml` si `footer.xhtml`<br/>
-                               - insereaza "content"
+                - `page.xhtml` - include `header.xhtml` si `footer.xhtml`; insereaza "content" <br/>
                 - `dataView.xhtml` - implementeaza `page.xhtml`, defineste "content" si creaza un form care permite inserarea de dataViewContent<br/>
                                    - template-ul este implementat de test in pagina `test_view.xhtml`<br/>
                 - `dataEdit.xhtml` - implementeaza `page.xhtml`, defineste "content" si creaza un form care permite inserarea de dataEditContent<br/>
