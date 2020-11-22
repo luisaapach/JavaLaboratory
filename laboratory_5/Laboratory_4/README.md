@@ -26,7 +26,7 @@
   - `webapp\resources\components\meetingDescr.xhtml` - o componenta composite care afiseaza informatii despre un meeting, cu parametrii necesari
   - `poll_util.xhtml` - updateaza numarul de sesiuni in lucru - `CounterListener` implemnteaza HttpSessionListener si asigura updatarea numarului de sesiuni,
                                                                   la fiecare creare/distrugere de sesiune
-  - Internationalizarea - `webapp\WEB-INF\classes\Messages_en.properties` si `webapp\WEB-INF\classes\Messages_en.properties` - exemplu de aplicare
+  - Internationalizarea - `webapp\WEB-INF\classes\Messages_en.properties` si `webapp\WEB-INF\classes\Messages_ro.properties` - exemplu de aplicare
                           in menuBar.xml
     
 ## Exercitiul 3
