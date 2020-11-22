@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui" xml:lang="en" lang="en">
+<ui:composition>
+    <h:form>
+
+    <p:menuButton value="Options">
+        <p:menuitem value="#{msg['addPerson']}" url="persons.xhtml"/>
+        <p:menuitem value="#{msg['addLocation']}" url="locations.xhtml" />
+        <p:menuitem value="#{msg['addMeeting']}" url="meetings.xhtml" />
+        <p:separator />
+        <p:menuitem value="#{msg['importFile']}" url = "import_file.xhtml"/>
+        <p:separator />
+        <p:menuitem value="#{msg['displayTables']}" url="displayTables.xhtml" icon="pi pi-home"/>
+    </p:menuButton>
+</h:form>
+</ui:composition>
+</html>

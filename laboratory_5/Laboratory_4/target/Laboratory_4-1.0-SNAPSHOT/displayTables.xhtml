@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://primefaces.org/ui/extensions">
+<h:head>
+    <title>Tables</title>
+</h:head>
+<h:body>
+    <h2>Persons</h2>
+    <p:dataTable value = "#{manager.persons}" var = "pers">
+        <p:column headerText="ID">
+            <h:outputText value="#{pers.id}" />
+        </p:column>
+
+        <p:column headerText="ID">
+            <h:outputText value="#{pers.name}" />
+        </p:column>
+
+    </p:dataTable>
+<br/><br/>
+    <h2>Meetings</h2>
+    <p:dataTable value = "#{manager.meetings}" var = "meet">
+        <p:column headerText="ID">
+            <h:outputText value="#{meet.id}" />
+        </p:column>
+        <p:column headerText="TOPIC">
+            <h:outputText value="#{meet.topic}" />
+        </p:column>
+        <p:column headerText="STARTING_TIME">
+            <h:outputText value="#{meet.starting_time}" />
+        </p:column>
+        <p:column headerText="DURATION">
+            <h:outputText value="#{meet.duration}" />
+        </p:column>
+        <p:column headerText="PERSONS_IDS">
+            <h:outputText value="#{meet.selectedPersons}"/>
+        </p:column>
+    </p:dataTable>
+</h:body>
+</html>

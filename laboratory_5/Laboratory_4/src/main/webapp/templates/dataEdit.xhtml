@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 17.2020 - Owned by lapachitei
+  -->
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"   xmlns:ui="http://java.sun.com/jsf/facelets" xml:lang="en" lang="en">
+<ui:composition template="/templates/page.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="content">
+
+        <p:dialog id="dataEditDialog" header="#{pageTitle}" modal="true" visible="true">
+            <h:form id="dataEditForm">
+
+                <ui:insert name="dataEditContent">
+                    Data editor
+                </ui:insert>
+                <br/>
+                <p:focus id="formFocus" context="dataEditForm"/>
+            </h:form>
+            <p:ajax event="close" listener="#{dataEdit.onClose}" update="msg"/>
+        </p:dialog>
+        <p:messages id="msg" />
+    </ui:define>
+</ui:composition>
+
+</html>
