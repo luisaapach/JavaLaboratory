@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"   xmlns:ui="http://java.sun.com/jsf/facelets" xml:lang="en" lang="en">
+<ui:composition  template="/templates/dataEdit.xhtml" >
+    <ui:define name="title">Add Person</ui:define>
+    <ui:define name="pageTitle">Add Person</ui:define>
+    <ui:param name="pageTitle" value="Add Person" />
+    <ui:define name="dataEditContent">
+
+    <h:form>
+        <h2><h:outputLabel for="personId" value="Your id:"/></h2>
+        <h:inputText id="personId" value="#{personBean.entity.id}"
+                     required="true" converter="javax.faces.BigDecimal"/>
+        <h2><h:outputLabel for="personName" value="Your name:"/></h2>
+        <h:inputText id="personName" value="#{personBean.entity.name}"
+                     required="true"/>
+        <h2><h:commandButton id="submit"
+                             value="Submit" action="#{manager.addPerson(personBean)}"/></h2>
+
+    </h:form>
+    </ui:define>
+</ui:composition>
+</html>

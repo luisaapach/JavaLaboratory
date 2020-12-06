@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"   xmlns:ui="http://java.sun.com/jsf/facelets" xml:lang="en" lang="en">
+
+<ui:composition template="/templates/dataEdit.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="title">Search Meetings</ui:define>
+    <ui:define name="pageTitle">Search Meetings</ui:define>
+    <ui:param name="pageTitle" value="Search Meetings" />
+    <ui:define name="dataEditContent">
+
+        <p:selectManyCheckbox id="basic" value="#{search.selectedCriterias}">
+            <f:selectItem itemLabel="Topic" itemValue="topic" />
+            <f:selectItem itemLabel="Person Name" itemValue="name" />
+            <f:selectItem itemLabel="Location" itemValue="location" />
+        </p:selectManyCheckbox>
+
+        <h2><h:outputLabel for="toSearch" value="String To Search:"/></h2>
+        <h:inputText id="toSearch" value="#{search.toSearch}" required="true"/>
+
+        <h:commandButton id="submit" value="Search" action="#{search.doSearch}" ajax="true"
+                         update="meetings" />
+
+
+            <p:dataTable id="meetings" value = "#{search.meetings}" var = "meet">
+                <p:column headerText="ID">
+                    <h:outputText value="#{meet.entity.id}" />
+                </p:column>
+                <p:column headerText="TOPIC">
+                    <h:outputText value="#{meet.entity.topic}" />
+                </p:column>
+                <p:column headerText="STARTING_TIME">
+                    <h:outputText value="#{meet.entity.starting_time}" />
+                </p:column>
+                <p:column headerText="DURATION">
+                    <h:outputText value="#{meet.entity.duration}" />
+                </p:column>
+                <p:column headerText="PERSONS_IDS">
+                    <h:outputText value="#{meet.entity.persons}"/>
+                </p:column>
+                <p:column headerText="LOCATION_ID">
+                    <h:outputText value="#{meet.entity.location}"/>
+                </p:column>
+            </p:dataTable>
+
+    </ui:define>
+</ui:composition>
+</html>

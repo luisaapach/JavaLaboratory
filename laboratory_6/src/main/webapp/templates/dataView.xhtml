@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 17.2020 - Owned by lapachitei
+  -->
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"   xmlns:ui="http://java.sun.com/jsf/facelets" xml:lang="en" lang="en">
+<ui:composition  template="/templates/page.xhtml" >
+    <ui:define name="content">
+        <h:form id="dataViewMsg">
+            <p:messages id="messages" for="dataForm" showDetail="false"
+                        autoUpdate="true" closable="true" />
+        </h:form>
+        <h:form id="dataForm" style="background: white">
+            <ui:insert name="dataViewContent">
+                A view of the data. May be a dataTable, or a list, etc.
+            </ui:insert>
+        </h:form>
+    </ui:define>
+</ui:composition>
+</html>
