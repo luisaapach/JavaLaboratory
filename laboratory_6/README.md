@@ -17,6 +17,9 @@
 	- Implementarea search-ului s-a facut folosind JPA Criteria API, concatenand la un Predicat (conditii - pentru implementare `where`)
 		in functie de checkbox-ul selectat
 
+![Screenshot](Search_start.png)
+![Screenshot](Search_result.png)
+
 ## Exercitiul 4
 	- Teste pentru Operatiile CRUD (In comentarii sunt mentionate operatiile testate) 
 	- Toate rulate si reusite:

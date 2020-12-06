@@ -73,7 +73,7 @@ public class DBActions {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("custom_persistence");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        Query query = entityManager.createQuery("SELECT p FROM Meeting p");
+        Query query = entityManager.createQuery("SELECT p FROM Meeting p order by p.id");
         List<Meeting> entities = query.getResultList();
 
         List<MeetingBean> ls = new ArrayList<>();
@@ -190,16 +190,29 @@ public class DBActions {
                 condition = builder.like(e.get(Meeting_.location).get(Location_.name), "%" + locationName + "%");
         }
 
-        query.where(condition).distinct(true);
+        query.where(condition).distinct(true).orderBy(builder.asc(e.get("id")));
 
         TypedQuery<Meeting> q = em.createQuery(query);
         List<Meeting> entities = q.getResultList();
 
         for (Meeting entity : entities)
         {
-            MeetingBean meeting = new MeetingBean();
-            meeting.setEntity(entity);
-            result.add(meeting);
+            MeetingBean meetingBean = new MeetingBean();
+            meetingBean.setEntity(entity);
+
+            LocationBean locationBean = new LocationBean();
+            locationBean.setEntity(entity.getLocation());
+            meetingBean.setSelectedLocation(locationBean);
+
+            List<PersonBean> persons = new ArrayList<>();
+            for(Person p : entity.getPersons()){
+                PersonBean personBean = new PersonBean();
+                personBean.setEntity(p);
+                persons.add(personBean);
+            }
+            meetingBean.setSelectedPersons(persons);
+            result.add(meetingBean);
+
         }
 
         em.close();

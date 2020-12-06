@@ -24,12 +24,12 @@
         </p:selectManyCheckbox>
 
         <h2><h:outputLabel for="toSearch" value="String To Search:"/></h2>
-        <h:inputText id="toSearch" value="#{search.toSearch}" required="true"/>
+        <h2><h:inputText id="toSearch" value="#{search.toSearch}" required="true"/>
 
         <h:commandButton id="submit" value="Search" action="#{search.doSearch}" ajax="true"
-                         update="meetings" />
+                         update="meetings" /></h2>
 
-
+        <br/>
             <p:dataTable id="meetings" value = "#{search.meetings}" var = "meet">
                 <p:column headerText="ID">
                     <h:outputText value="#{meet.entity.id}" />
