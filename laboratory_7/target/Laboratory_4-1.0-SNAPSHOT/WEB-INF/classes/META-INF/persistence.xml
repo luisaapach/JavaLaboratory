@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+        <persistence-unit name="custom_persistence" transaction-type="JTA">
+                <jta-data-source>java:app/custom</jta-data-source>
+                <exclude-unlisted-classes>false</exclude-unlisted-classes>
+                <properties>
+                        <property name="eclipselink.logging.level" value="FINE"/>
+                        <property name="hibernate.dialect"
+                                  value="org.hibernate.dialect.PostgreSQLDialect"/>
+                    <!--  Optimization #11 - disable caching for batch insert (caching only improves reads, so only adds overhead for inserts) -->
+                    <property name="eclipselink.cache.shared.default" value="true" />
+                </properties>
+        </persistence-unit>
+</persistence>

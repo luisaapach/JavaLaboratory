@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 17.2020 - Owned by lapachitei
+  -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://primefaces.org/ui/extensions">
+<h:head>
+    <title>Reservations</title>
+</h:head>
+<h:body>
+<h1>Make Reservation</h1>
+<h:form>
+    <h2></h2>
+    <p:dataTable id="checkboxDT" var="personBean" value="#{personBean.personManager.persons}" selection="${assignmentBean.selectedPersons}" scrollable="true" rowKey="#{personBean.entity.id}" style="margin-bottom:0">
+        <f:facet name="header">
+            Persons
+        </f:facet>
+        <p:column selectionMode="multiple" style="width:16px;text-align:center"/>
+        <p:column headerText="Id">
+            <h:outputText value="#{personBean.entity.id}" />
+        </p:column>
+        <p:column headerText="Name">
+            <h:outputText value="#{personBean.entity.name}" />
+        </p:column>
+        <f:facet name="footer"></f:facet>
+    </p:dataTable>
+    <h2></h2>
+    <p:dataTable id="singlecheckDT" var="meetingBean" value="#{meetingBean.meetingManager.meetings}" selection="${assignmentBean.selectedMeeting}" scrollable="true" rowKey="#{meetingBean.entity.id}" style="margin-bottom:0">
+        <f:facet name="header">
+            Meeting
+        </f:facet>
+        <p:column selectionMode="single" style="width:16px;text-align:center"/>
+        <p:column headerText="Id">
+            <h:outputText value="#{meetingBean.entity.id}" />
+        </p:column>
+        <p:column headerText="Topic">
+            <h:outputText value="#{meetingBean.entity.topic}" />
+        </p:column>
+    </p:dataTable>
+
+    <h2><h:commandButton id="submit"
+                         value="Submit" action="#{assignmentBean.meetingManager.addAssignment(assignmentBean)}">
+    </h:commandButton></h2>
+
+</h:form>
+</h:body>
+</html>

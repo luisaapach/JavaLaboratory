@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:composite = "http://java.sun.com/jsf/composite"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<composite:interface>
+    <composite:attribute name="id" required="true"/>
+    <composite:attribute name="topic" required="false"/>
+    <composite:attribute name="startingtime" required="false"/>
+    <composite:attribute name="duration" required="false"/>
+    <composite:attribute name="persons" required="false"/>
+    <composite:attribute name="location" required="false"/>
+</composite:interface>
+<composite:implementation>
+    <p:panelGrid columns="2">
+        <f:facet name="header">
+            Meeting
+        </f:facet>
+
+        <h:outputText value="ID:" />
+        <h:outputText value="#{cc.attrs.id}" />
+
+        <h:outputText value="Topic:" />
+        <h:outputText value="#{cc.attrs.topic}" />
+
+        <h:outputText value="Starting Time:" />
+        <h:outputText value="#{cc.attrs.startingtime}" />
+
+        <h:outputText value="Duration:" />
+        <h:outputText value="#{cc.attrs.duration}" />
+
+        <h:outputText value="Persons:" />
+        <h:outputText value="#{cc.attrs.persons}" />
+
+        <h:outputText value="Location:" />
+        <h:outputText value="#{cc.attrs.location}" />
+    </p:panelGrid>
+
+</composite:implementation>
+</html>
