@@ -1,0 +1,4 @@
+Jan 03, 2021 8:13:56 PM Interceptor.LoggedInterceptor logMethodEntry
+INFO: Entering method: addUpload in class Services.UploadService
+Jan 03, 2021 8:14:09 PM Interceptor.LoggedInterceptor logMethodEntry
+INFO: Entering method: onUploadsUpdate in class Beans.UploadsCacheBean
