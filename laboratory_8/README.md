@@ -13,7 +13,7 @@
 	1. @Inject
 	    - S-a renuntat la folosirea adnotarii @EJB si s-a folosit @Inject pentru preluarea de clase DAO (din pachetul *Services*), fiind necesara crearea de interfete specifice pentru fiecare tip de Service (pachetul *Interfaces*)
 	    - Exemplu : 
-	    ![Screenshot](/ex1.png)
+	    ![Screenshot](./ex1.png)
 	2.  @Produces
 	    - S-a creat o producer method pentru generarea de numere unice de submitere a fisierelor (*Beans/IDGenerator*)
 	    - Valoarea s-a generat la efectuarea de upload
@@ -40,5 +40,5 @@
                @Size(min = 3, max = 50, message= "Username must be between 3 and 50 characters")
                private String username;
         ```
-       ![Screenshot](/ex2.png)
+       ![Screenshot](./ex2.png)
        
