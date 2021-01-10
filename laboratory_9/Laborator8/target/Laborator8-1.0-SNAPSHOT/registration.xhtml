@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Registration</title>
+</h:head>
+<body>
+<h:form id="registrationForm">
+    <p:panel header="Registration Form" style="width: 500px;">
+        <p:messages/>
+        <h:panelGrid columns="2">
+            <h:outputLabel for="personId" value="ID:"/>
+            <h:inputText id="personId" value="#{userBean.entity.id}"
+                         required="true" converter="javax.faces.BigDecimal"/>
+
+            <h:outputLabel value="UserName:"/>
+            <h:inputText id="userName" value="#{userBean.entity.username}" label="UserName" />
+
+            <h:outputLabel value="Password:"/>
+            <h:inputSecret id="password" value="#{userBean.entity.password}" label="Password"/>
+
+            <h:outputLabel value=""/>
+            <h:commandButton action="#{registrationBean.addUser(userBean)}" value="Register" update="registrationForm"/>
+
+        </h:panelGrid>
+    </p:panel>
+</h:form>
+</body>
+</html>

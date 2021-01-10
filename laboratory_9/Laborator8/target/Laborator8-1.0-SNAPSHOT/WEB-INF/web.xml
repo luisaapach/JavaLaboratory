@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <context-param>
+        <param-name>primefaces.UPLOADER</param-name>
+        <param-value>auto</param-value>
+    </context-param>
+    <welcome-file-list>
+        <welcome-file>login.xhtml</welcome-file>
+    </welcome-file-list>
+
+    <filter>
+        <filter-name>GuestRoleFilter</filter-name>
+        <filter-class>Filters.GuestRoleFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>GuestRoleFilter</filter-name>
+        <url-pattern>/upload.xhtml</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>AdminRoleFilter</filter-name>
+        <filter-class>Filters.AdminRoleFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AdminRoleFilter</filter-name>
+        <url-pattern>/adminUploads.xhtml</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>PrimeFaces FileUpload Filter</filter-name>
+        <filter-class>
+            org.primefaces.webapp.filter.FileUploadFilter
+        </filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PrimeFaces FileUpload Filter</filter-name>
+        <url-pattern>/upload.xhtml</url-pattern>
+    </filter-mapping>
+
+</web-app>
