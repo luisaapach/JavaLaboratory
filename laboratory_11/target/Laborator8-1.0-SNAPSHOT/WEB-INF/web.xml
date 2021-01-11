@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <context-param>
+        <param-name>primefaces.UPLOADER</param-name>
+        <param-value>auto</param-value>
+    </context-param>
+    <welcome-file-list>
+        <welcome-file>login.xhtml</welcome-file>
+    </welcome-file-list>
+
+    <filter>
+        <filter-name>PrimeFaces FileUpload Filter</filter-name>
+        <filter-class>
+            org.primefaces.webapp.filter.FileUploadFilter
+        </filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PrimeFaces FileUpload Filter</filter-name>
+        <url-pattern>/upload.xhtml</url-pattern>
+    </filter-mapping>
+
+
+    <security-role>
+        <description>Administrator</description>
+        <role-name>admin</role-name>
+    </security-role>
+    <security-role>
+        <description>Guests</description>
+        <role-name>guest</role-name>
+    </security-role>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>ViewDocument</web-resource-name>
+            <url-pattern>/view_document</url-pattern>
+            <http-method>GET</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>UpdateDocument</web-resource-name>
+            <url-pattern>/update_document</url-pattern>
+            <http-method>PUT</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+            <role-name>guest</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>AddDocument</web-resource-name>
+            <url-pattern>/add_document</url-pattern>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>guest</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>DeleteDocument</web-resource-name>
+            <url-pattern>/delete_document</url-pattern>
+            <http-method>DELETE</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>jdbc-new-realm</realm-name>
+        <form-login-config>
+            <form-login-page>/login.xhtml</form-login-page>
+            <form-error-page>/login.xhtml</form-error-page>
+        </form-login-config>
+    </login-config>
+
+    <security-constraint>
+        <display-name>SecurityConstraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>ViewDocumentServiceWS</web-resource-name>
+            <url-pattern>/ViewDocumentService/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+
+    <security-constraint>
+        <display-name>Admin Only</display-name>
+        <web-resource-collection>
+            <web-resource-name>User management</web-resource-name>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <display-name>Guest Only</display-name>
+        <web-resource-collection>
+            <web-resource-name>Upload action</web-resource-name>
+            <url-pattern>/guest/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>guest</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+<!--    <error-page>-->
+<!--        <error-code>403</error-code>-->
+<!--        <location>/forbidden.xhtml</location>-->
+<!--    </error-page>-->
+
+
+</web-app>

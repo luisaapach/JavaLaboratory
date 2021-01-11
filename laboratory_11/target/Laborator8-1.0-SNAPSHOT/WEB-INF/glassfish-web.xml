@@ -1,0 +1,22 @@
+<!--
+  ~ Copyright (c) 17.2020 - Owned by lapachitei
+  -->
+
+<glassfish-web-app>
+    <resource-ref>
+        <res-ref-name>java:app/custom</res-ref-name>
+        <jndi-name>custom</jndi-name>
+    </resource-ref>
+
+    <security-role-mapping>
+        <role-name>admin</role-name>
+        <group-name>admin</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>guest</role-name>
+        <group-name>guest</group-name>
+    </security-role-mapping>
+
+
+</glassfish-web-app>
